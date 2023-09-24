@@ -261,11 +261,7 @@
                     MIT visual results on the ScanNet dataset
                 </p>
                 <div class="image-container_result">
-                    <!-- <img id='LDRImg' src="img/Result_Website_LDR.png" onmouseover="hover(this)" onmouseout="hoverOut(this)"/> -->
-                    <!-- <img src="img/Result_Website_LDR.png" alt="Image 1" id="img_result1"> -->
-                    <!-- <img src="img/Result_Website_HDR.png" alt="Image 2" id="img_result2"> -->
-                    <img src="img/fig1.png" class="responsive" onmouseover="changeImage(1,this)"
-                        onmouseout="changeImage(2,this)">
+                    <img src="img/fig1.png" class="responsive" alt="Image Description">
                 </div>
                 </p>
             </div>
@@ -287,135 +283,106 @@
                         <table class="tg">
                             <thead>
                                 <tr>
-                                    <th class="tg-7s0l" rowspan="3">Dataset</th>
-                                    <th class="tg-7s0l" rowspan="3">Method</th>
-                                    <th class="tg-7s0l" colspan="2">PSNR</th>
-                                    <th class="tg-7s0l" colspan="2">PSNR</th>
-                                    <th class="tg-7s0l" colspan="2" rowspan="2">HDR-VDP-2</th>
+                                    <th class="tg-7uo3" rowspan="2">Method</th>
+                                    <th class="tg-7uo3" rowspan="2">Supervision</th>
+                                    <th class="tg-7uo3" colspan="3">Extra inputs</th>
+                                    <th class="tg-7uo3" colspan="2">ScanNet</th>
+                                    <th class="tg-7uo3">S3DIS</th>
                                 </tr>
                                 <tr>
-                                    <th class="tg-7s0l" colspan="2">RH's TMO</th>
-                                    <th class="tg-7s0l" colspan="2">KK's TMO</th>
-                                </tr>
-                                <tr>
-                                    <th class="tg-7s0l">mean</th>
-                                    <th class="tg-7s0l">Sigma</th>
-                                    <th class="tg-7s0l">mean</th>
-                                    <th class="tg-7s0l">Sigma</th>
-                                    <th class="tg-7s0l">mean</th>
-                                    <th class="tg-7s0l">Sigma</th>
+                                    <th class="tg-7uo3">RGB</th>
+                                    <th class="tg-7uo3"> Pose</th>
+                                    <th class="tg-7uo3">Depth</th>
+                                    <th class="tg-7uo3">Val.</th>
+                                    <th class="tg-7uo3"> Test</th>
+                                    <th class="tg-7uo3">Test</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="tg-jb0k" rowspan="6">VDS</td>
-                                    <td class="tg-jb0k">DrTMO</td>
-                                    <td class="tg-jb0k">25.49</td>
-                                    <td class="tg-jb0k">4.28</td>
-                                    <td class="tg-jb0k">21.36</td>
-                                    <td class="tg-jb0k">4.50</td>
-                                    <td class="tg-jb0k">54.33</td>
-                                    <td class="tg-jb0k">6.27</td>
+                                    <td class="tg-kwiq"> <br>MinkNet</td>
+                                    <td class="tg-3xho" rowspan="3"> <br><span
+                                            style="font-weight:normal;font-style:italic">Fully</span></td>
+                                    <td class="tg-j844"> <br>- </td>
+                                    <td class="tg-j844"> <br>- </td>
+                                    <td class="tg-j844"> <br>- </td>
+                                    <td class="tg-3xho"> <br>72.2 </td>
+                                    <td class="tg-3xho"> <br>73.6</td>
+                                    <td class="tg-3xho"> <br>65.8</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-jb0k">Deep chain HDRi</td>
-                                    <td class="tg-jb0k">30.86</td>
-                                    <td class="tg-jb0k">3.36</td>
-                                    <td class="tg-jb0k">24.54</td>
-                                    <td class="tg-jb0k">4.01</td>
-                                    <td class="tg-jb0k">56.36</td>
-                                    <td class="tg-jb0k">4.41</td>
+                                    <td class="tg-kwiq"> <br>DeepViewAgg </td>
+                                    <td class="tg-j844"> <br>v</td>
+                                    <td class="tg-qaub"> <br>v</td>
+                                    <td class="tg-j844"> <br>- </td>
+                                    <td class="tg-3xho"> <br>71.0</td>
+                                    <td class="tg-3xho"> <br>-</td>
+                                    <td class="tg-3xho"> <br>67.2</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-jb0k">Deep recursive HDRI</td>
-                                    <td class="tg-jb0k">32.99</td>
-                                    <td class="tg-jb0k">2.81</td>
-                                    <td class="tg-jb0k">28.02</td>
-                                    <td class="tg-jb0k">3.50</td>
-                                    <td class="tg-jb0k">57.15</td>
-                                    <td class="tg-jb0k">4.35</td>
+                                    <td class="tg-kwiq"> <br>SemAffiNet </td>
+                                    <td class="tg-qaub"> <br>v</td>
+                                    <td class="tg-qaub"> <br>v</td>
+                                    <td class="tg-qaub"> <br>v</td>
+                                    <td class="tg-3xho"> <br>- </td>
+                                    <td class="tg-3xho"> <br>74.9</td>
+                                    <td class="tg-3xho"> <br>71.6</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-jb0k">Santos et al.</td>
-                                    <td class="tg-jb0k">22.56</td>
-                                    <td class="tg-jb0k">2.68</td>
-                                    <td class="tg-jb0k">18.23</td>
-                                    <td class="tg-jb0k">3.53</td>
-                                    <td class="tg-jb0k">53.51</td>
-                                    <td class="tg-jb0k">4.76</td>
+                                    <td class="tg-kwiq"> <br>Kewon et al. </td>
+                                    <td class="tg-3xho"> <br><span style="font-weight:normal;font-style:italic">Scene +
+                                            Image</span></td>
+                                    <td class="tg-qaub"> <br>v</td>
+                                    <td class="tg-qaub"> <br>v</td>
+                                    <td class="tg-j844"></td>
+                                    <td class="tg-3xho"> <br>49.6</td>
+                                    <td class="tg-3xho"> <br>47.4</td>
+                                    <td class="tg-3xho"></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-jb0k">Liu et al.</td>
-                                    <td class="tg-jb0k">30.89</td>
-                                    <td class="tg-jb0k">3.27</td>
-                                    <td class="tg-jb0k">28.00</td>
-                                    <td class="tg-jb0k">4.11</td>
-                                    <td class="tg-jb0k">56.97</td>
-                                    <td class="tg-jb0k">6.15</td>
+                                    <td class="tg-kwiq"> <br>MIL-Trans </td>
+                                    <td class="tg-3xho" rowspan="4"> <br><span
+                                            style="font-weight:normal;font-style:italic">Scene</span></td>
+                                    <td class="tg-j844"> <br>-</td>
+                                    <td class="tg-j844"> <br>-</td>
+                                    <td class="tg-j844"> <br>-</td>
+                                    <td class="tg-3xho"> <br>26.2</td>
+                                    <td class="tg-3xho"> <br>-</td>
+                                    <td class="tg-3xho"> <br>12.9</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-jb0k">CEVR (Ours)</td>
-                                    <td class="tg-eiei">34.67</td>
-                                    <td class="tg-jb0k">3.50</td>
-                                    <td class="tg-eiei">30.04</td>
-                                    <td class="tg-jb0k">4.45</td>
-                                    <td class="tg-eiei">59.00</td>
-                                    <td class="tg-jb0k">5.78</td>
+                                    <td class="tg-0pky"> <br>WYPR</td>
+                                    <td class="tg-j844"> <br><span style="font-weight:normal">-</span></td>
+                                    <td class="tg-j844"> <br><span style="font-weight:normal">-</span></td>
+                                    <td class="tg-j844"> <br><span style="font-weight:normal">-</span></td>
+                                    <td class="tg-3xho"> <br><span style="font-weight:normal">29.3</span></td>
+                                    <td class="tg-3xho"> <br><span style="font-weight:normal">24.0</span></td>
+                                    <td class="tg-3xho"> <br>22.3</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-jb0k" rowspan="6">HDREye</td>
-                                    <td class="tg-jb0k">DrTMO</td>
-                                    <td class="tg-jb0k">23.68</td>
-                                    <td class="tg-jb0k">3.27</td>
-                                    <td class="tg-jb0k">19.97</td>
-                                    <td class="tg-jb0k">4.11</td>
-                                    <td class="tg-jb0k">46.67</td>
-                                    <td class="tg-jb0k">5.81</td>
+                                    <td class="tg-0pky"> <br><span
+                                            style="font-weight:normal;font-style:normal;color:#000">MIT
+                                            (3D-only)</span><span style="color:#000"> </span></td>
+                                    <td class="tg-j844"> <br>-</td>
+                                    <td class="tg-j844"> <br><span style="font-weight:normal">-</span></td>
+                                    <td class="tg-j844"> <br><span style="font-weight:normal">-</span></td>
+                                    <td class="tg-3xho"> <br><span style="font-weight:normal">31.6</span></td>
+                                    <td class="tg-3xho"> <br><span style="font-weight:normal">26.4</span></td>
+                                    <td class="tg-3xho"> <br><span style="font-weight:normal">23.1</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-jb0k">Deep chain HDRi</td>
-                                    <td class="tg-jb0k">25.77</td>
-                                    <td class="tg-jb0k">2.44</td>
-                                    <td class="tg-jb0k">22.62</td>
-                                    <td class="tg-jb0k">3.39</td>
-                                    <td class="tg-jb0k">49.80</td>
-                                    <td class="tg-jb0k">5.97</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-jb0k">Deep recursive HDRI</td>
-                                    <td class="tg-jb0k">26.28</td>
-                                    <td class="tg-jb0k">2.70</td>
-                                    <td class="tg-jb0k">24.62</td>
-                                    <td class="tg-jb0k">2.90</td>
-                                    <td class="tg-jb0k">52.63</td>
-                                    <td class="tg-jb0k">4.84</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-jb0k">Santos et al.</td>
-                                    <td class="tg-jb0k">19.89</td>
-                                    <td class="tg-jb0k">2.46</td>
-                                    <td class="tg-jb0k">19.00</td>
-                                    <td class="tg-jb0k">3.06</td>
-                                    <td class="tg-jb0k">49.97</td>
-                                    <td class="tg-jb0k">5.44</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-jb0k">Liu et al.</td>
-                                    <td class="tg-jb0k">26.25</td>
-                                    <td class="tg-jb0k">3.08</td>
-                                    <td class="tg-jb0k">24.67</td>
-                                    <td class="tg-jb0k">3.54</td>
-                                    <td class="tg-jb0k">50.33</td>
-                                    <td class="tg-jb0k">6.67</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-jb0k">CEVR (Ours)</td>
-                                    <td class="tg-eiei">26.54</td>
-                                    <td class="tg-jb0k">3.10</td>
-                                    <td class="tg-eiei">24.81</td>
-                                    <td class="tg-jb0k">2.91</td>
-                                    <td class="tg-eiei">53.15</td>
-                                    <td class="tg-jb0k">4.91</td>
+                                    <td class="tg-0pky">&nbsp;&nbsp;&nbsp;<br><span
+                                            style="font-weight:bold;font-style:normal;color:#ED7D31">MIT
+                                            (Ours)</span>&nbsp;&nbsp;&nbsp;</td>
+                                    <td class="tg-qaub"> <br>v</td>
+                                    <td class="tg-j844"> <br><span style="font-weight:bold">-</span></td>
+                                    <td class="tg-j844"> <br><span style="font-weight:bold">-</span></td>
+                                    <td class="tg-9wq8"> <br><span style="font-weight:bold;color:#ED7D31">35.8</span>
+                                    </td>
+                                    <td class="tg-9wq8"> <br><span style="font-weight:bold;color:#ED7D31">31.7</span>
+                                    </td>
+                                    <td class="tg-9wq8"> <br><span style="font-weight:bold;color:#ED7D31">27.4</span>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
